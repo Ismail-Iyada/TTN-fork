@@ -1,4 +1,4 @@
-def registry = 'https://badada.jfrog.io'
+def registry = 'https://zazazi.jfrog.io/'
 
 
 pipeline {
@@ -37,7 +37,7 @@ pipeline {
                             "files": [
                                 {
                                 "pattern": "jarstaging/(*)",
-                                "target": "ttrend-libs-release-local/{1}",
+                                "target": "zazazi-libs-release-local/{1}",
                                 "flat": "false",
                                 "props" : "${properties}",
                                 "exclusions": [ "*.sha1", "*.md5"]
